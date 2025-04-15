@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="topo">
+        <h1> Cadastro de usuário </h1> 
+    </div>
+    <div class="Formulario">
+    <form> 
+            
+        <label for="nome"> Nome: </label>
+        <input type="text" id="nome" required> 
+        <p></p>
+
+        <label for="area"> Área do Terreno: </label>
+        <input type="number" name="area" id="area" required> 
+        <p></p>
+
+
+        <select>
+            <option onclick="valorfixo()"> Poda </option>
+            <option onclick="adicionar()"> Plantio </option>
+            <option onclick="adicionarDobro()"> Manutenção completa </option>
+
+        </select> <!-- fechamento select-->
+
+        <div class="contador">
+            <div class="manutencao"> <!-- mensal-->
+                <h2> Deseja manutencao mensal? </h2>
+                <button id="sim"> SIM </button>
+                <button id="nao"> NÃO</button>
+                    
+                <h2> Calcular Orçamento </h2>
+                <button id="calcular"> Calcular Orçamento </button>
+
+
+        </div> <!-- fechamento -->
+
+
+        <input type="submit" value="Enviar"> 
+        
+    <script src="js/script.js"></script>
+</body>
+
+</html>
